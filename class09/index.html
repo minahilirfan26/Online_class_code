@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .typing-loader{
+    width: 6px;
+    height: 6px;
+    -webkit-animation: line 1s linear infinite alternate;
+   -moz-animation: line 1s linear infinite alternate;
+   animation: line 1s linear infinite alternate;
+}
+@-webkit-keyframes line{
+    0%{
+       
+        background-color: rgba(0,0,0, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,0.2), 
+                    24px 0px 0px 0px rgba(0,0,0,0.2);
+                    
+      }
+    25%{ 
+            background-color: rgba(0,0,0, 0.4);
+            box-shadow: 12px 0px 0px 0px rgba(0,0,0,2), 
+                    24px 0px 0px 0px rgba(0,0,0,0.2);
+                    
+    }
+    75%{ background-color: rgba(0,0,0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,0.2), 
+                    24px 0px 0px 0px rgba(0,0,0,2);
+                   
+      }
+}
+
+@-moz-keyframes line{
+    0%{
+       
+        background-color: rgba(0,0,0, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,0.2), 
+                    24px 0px 0px 0px rgba(0,0,0,0.2);
+                    
+      }
+    25%{ 
+            background-color: rgba(0,0,0, 0.4);
+            box-shadow: 12px 0px 0px 0px rgba(0,0,0,2), 
+                    24px 0px 0px 0px rgba(0,0,0,0.2);
+                    
+    }
+    75%{ background-color: rgba(0,0,0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,0.2), 
+                    24px 0px 0px 0px rgba(0,0,0,2);
+                   
+      }
+}
+
+@keyframes line{
+    0%{
+       
+        background-color: rgba(0,0,0, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,0.2), 
+                    24px 0px 0px 0px rgba(0,0,0,0.2);
+                    
+      }
+    25%{ 
+            background-color: rgba(0,0,0, 0.4);
+            box-shadow: 12px 0px 0px 0px rgba(0,0,0,2), 
+                    24px 0px 0px 0px rgba(0,0,0,0.2);
+                    
+    }
+    75%{ background-color: rgba(0,0,0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,0.2), 
+                    24px 0px 0px 0px rgba(0,0,0,2);
+                   
+      }
+}
+.right{
+    color: red;
+}
+.left{
+    color: blue;
+}
+    </style>
+</head>
+<body>
+    <ul id="list"></ul>
+    <div class="typing-loader" id="loader" style="display: none;"></div>
+    <input type="text" id="inputBox" onkeydown="message()">
+    
+</body>
+<script src="app.js"></script>
+</html>
